@@ -28,9 +28,10 @@ public class Headphones extends Product {
 
     @Override
     public String toString() {
-        return super.toString() + "Headphones{" +
+        return  "Headphones - " +
                 "colour='" + colour + '\'' +
                 ", isWireless=" + isWireless +
-                '}';
+                super.toString()
+                ;
     }
 }

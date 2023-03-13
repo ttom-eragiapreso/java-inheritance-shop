@@ -8,6 +8,8 @@ public class Cart {
         System.out.println("Hello! How many products would you like to add to your catalogue?");
         int catalogueLength = Integer.parseInt(scan.nextLine());
         Product[] catalogue = new Product[catalogueLength];
+        System.out.println("Do you have our fidelity card? 1 - YES, 2 - NO");
+        boolean hasCard = Integer.parseInt(scan.nextLine()) == 1;
 
 
         for (int i = 0; i < catalogue.length; i++) {
@@ -59,9 +61,12 @@ public class Cart {
                 }
             }
         }
+        BigDecimal totalPrice = new BigDecimal("00.00");
         for (Product product : catalogue) {
-            System.out.println(product);
+            totalPrice = totalPrice.add(product.getPrice());
         }
+
+        System.out.println(totalPrice);
 
     }
 }

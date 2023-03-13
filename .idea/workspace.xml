@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db512dbd-90e8-4d7b-8a73-3f7e875cc80e" name="Changes" comment="Creato Smartphone che estende prodotto">
-      <change afterPath="$PROJECT_DIR$/src/Tv.java" afterDir="false" />
+    <list default="true" id="db512dbd-90e8-4d7b-8a73-3f7e875cc80e" name="Changes" comment="Creato Tv che estende prodotto">
+      <change afterPath="$PROJECT_DIR$/src/Headphones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Smartphone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,12 +64,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678715495209</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creato Tv che estende prodotto">
+      <created>1678716186228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678716186228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Creato Smartphone che estende prodotto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creato Smartphone che estende prodotto" />
+    <MESSAGE value="Creato Tv che estende prodotto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creato Tv che estende prodotto" />
   </component>
 </project>

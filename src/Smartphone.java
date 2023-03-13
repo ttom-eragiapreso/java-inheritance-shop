@@ -4,9 +4,9 @@ import java.util.Random;
 public class Smartphone extends Product{
     //Data
     private int IMEI;
-    private String storage;
+    private int storage;
     //Constructor
-    public Smartphone(String name, BigDecimal price, String storage){
+    public Smartphone(String name, BigDecimal price, int storage){
         super(name, price);
         Random rnd = new Random();
         IMEI = rnd.nextInt(1, 99999999);
@@ -21,11 +21,11 @@ public class Smartphone extends Product{
         this.IMEI = IMEI;
     }
 
-    public String getStorage() {
+    public int getStorage() {
         return storage;
     }
 
-    public void setStorage(String storage) {
+    public void setStorage(int storage) {
         this.storage = storage;
     }
 

@@ -50,7 +50,7 @@ public class Product {
         return VAT;
     }
     //Custom methods
-    public BigDecimal priceWithVAT(){
+    public BigDecimal getPriceWithVAT(){
         BigDecimal VATPercentage = price.multiply(VAT);
         return price.add(VATPercentage).setScale(2, RoundingMode.HALF_EVEN);
         //return price.multiply((VAT.add(new BigDecimal("1"))));

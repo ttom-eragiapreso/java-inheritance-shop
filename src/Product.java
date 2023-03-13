@@ -9,6 +9,7 @@ public class Product {
     private String description;
     private BigDecimal price;
     private static final BigDecimal VAT = new BigDecimal("0.22");
+    private BigDecimal fidelityDiscount;
 
     //Constructor
     public Product(String name, BigDecimal price){
@@ -16,6 +17,7 @@ public class Product {
         code = rnd.nextInt();
         this.name = name;
         this.price = price;
+        this.fidelityDiscount = new BigDecimal("0.02");
     }
     //getters & setters
     public int getCode() {
@@ -49,11 +51,18 @@ public class Product {
     public static BigDecimal getVAT() {
         return VAT;
     }
+
+    public BigDecimal getFidelityDiscount(){
+        return fidelityDiscount;
+    }
+
+    public void setFidelityDiscount(BigDecimal discount){
+        fidelityDiscount = discount;
+    }
     //Custom methods
     public BigDecimal getPriceWithVAT(){
         BigDecimal VATPercentage = price.multiply(VAT);
         return price.add(VATPercentage).setScale(2, RoundingMode.HALF_EVEN);
-        //return price.multiply((VAT.add(new BigDecimal("1"))));
     }
 
     @Override
@@ -63,5 +72,9 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price ;
+    }
+    public BigDecimal getDiscountedPrice(){
+        BigDecimal discountPercentage = price.multiply(fidelityDiscount);
+        return price.subtract(discountPercentage);
     }
 }

@@ -34,4 +34,12 @@ public class Headphones extends Product {
                 super.toString()
                 ;
     }
+    @Override
+    public BigDecimal getDiscountedPrice() {
+        if (!isWireless) {
+            BigDecimal discountPercentage = getPrice().multiply(new BigDecimal("0.07"));
+            return getPrice().subtract(discountPercentage);
+        }
+        return super.getDiscountedPrice() ;
+    }
 }

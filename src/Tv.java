@@ -34,4 +34,12 @@ public class Tv extends Product{
                 ", isSmart=" + isSmart +
                 super.toString();
     }
+    @Override
+    public BigDecimal getDiscountedPrice() {
+        if (!isSmart) {
+            BigDecimal discountPercentage = getPrice().multiply(new BigDecimal("0.1"));
+            return getPrice().subtract(discountPercentage);
+        }
+        return super.getDiscountedPrice() ;
+    }
 }

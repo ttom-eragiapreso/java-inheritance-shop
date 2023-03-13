@@ -37,4 +37,13 @@ public class Smartphone extends Product{
                 super.toString()
                 ;
     }
+
+    @Override
+    public BigDecimal getDiscountedPrice() {
+        if (storage < 32) {
+            BigDecimal discountPercentage = getPrice().multiply(new BigDecimal("0.05"));
+            return getPrice().subtract(discountPercentage);
+        }
+        return super.getDiscountedPrice() ;
+    }
 }

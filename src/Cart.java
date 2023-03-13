@@ -28,7 +28,6 @@ public class Cart {
                     System.out.print("Storage:");
                     int storage = Integer.parseInt(scan.nextLine());
                     Smartphone smartphone = new Smartphone(name,price,storage);
-                    if(storage < 32) smartphone.setFidelityDiscount(new BigDecimal("0.05"));
                     catalogue[i] = smartphone;
                 }
                 case 2 -> {
@@ -42,7 +41,6 @@ public class Cart {
                     System.out.print("SmartTv?: 1 for YES, 2 for NO ");
                     boolean isSmart = Integer.parseInt(scan.nextLine()) == 1;
                     Tv tv = new Tv(name,price,inches,isSmart);
-                    if(!isSmart) tv.setFidelityDiscount(new BigDecimal("0.1"));
                     catalogue[i] = tv;
                 }
                 case 3 -> {
@@ -56,7 +54,6 @@ public class Cart {
                     System.out.print("Wireless?: 1 for YES, 2 for NO ");
                     boolean isWireless = Integer.parseInt(scan.nextLine()) == 1;
                     Headphones headphones = new Headphones(name,price,colour,isWireless);
-                    if(!isWireless) headphones.setFidelityDiscount(new BigDecimal("0.07"));
                     catalogue[i] = headphones;
                 }
                 default -> {
@@ -73,7 +70,7 @@ public class Cart {
             }
         }
 
-        System.out.println(totalPrice);
+        System.out.println("Your final price is " + totalPrice);
 
     }
 }

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db512dbd-90e8-4d7b-8a73-3f7e875cc80e" name="Changes" comment="finito senza bonus">
+    <list default="true" id="db512dbd-90e8-4d7b-8a73-3f7e875cc80e" name="Changes" comment="finito con bonus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Headphones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678722831042</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finito con bonus">
+      <created>1678724236915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678724236915</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,22 +104,7 @@
     <MESSAGE value="Creato Tv che estende prodotto" />
     <MESSAGE value="creato carrello basic" />
     <MESSAGE value="finito senza bonus" />
-    <option name="LAST_COMMIT_MESSAGE" value="finito senza bonus" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Cart.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Cart.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="finito con bonus" />
+    <option name="LAST_COMMIT_MESSAGE" value="finito con bonus" />
   </component>
 </project>
